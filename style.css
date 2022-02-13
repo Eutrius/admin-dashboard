@@ -1,0 +1,48 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+
+}
+
+#sidebar {
+    background-color: red;
+    grid-area: 1/1/3/2;
+}
+
+#header {
+    background-color: black;
+}
+
+#main-content {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#projects {
+    background-color: yellowgreen;
+    grid-area: 1/1/3/2;
+}
+
+#announcements {
+    background-color: tomato;
+}
+
+#trending {
+    background-color: skyblue;
+}
